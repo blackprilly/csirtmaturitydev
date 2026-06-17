@@ -23,13 +23,7 @@
             --shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
             --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin:0; padding:0; box-sizing:border-box; }
         body {
             font-family: 'Inter', system-ui, -apple-system, sans-serif;
             background: var(--bg);
@@ -37,12 +31,9 @@
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
         }
-
-        /* ============ FORM.GOV.SG INSPIRED HEADER ============ */
         .gov-header {
             background: var(--white);
             border-bottom: 1px solid var(--border);
-            padding: 0;
             position: sticky;
             top: 0;
             z-index: 100;
@@ -69,26 +60,9 @@
             font-size: 1.2rem;
             flex-shrink: 0;
         }
-        .gov-title h1 {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--text);
-            line-height: 1.3;
-        }
-        .gov-title span {
-            font-size: 0.75rem;
-            color: var(--text-secondary);
-            display: block;
-        }
-
-        /* ============ MAIN FORM CONTAINER ============ */
-        .form-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 1.5rem;
-        }
-
-        /* ============ PROGRESS BAR ============ */
+        .gov-title h1 { font-size: 1.1rem; font-weight: 600; color: var(--text); line-height: 1.3; }
+        .gov-title span { font-size: 0.75rem; color: var(--text-secondary); display: block; }
+        .form-container { max-width: 800px; margin: 0 auto; padding: 1.5rem; }
         .progress-section {
             background: var(--white);
             border-radius: var(--radius);
@@ -97,28 +71,9 @@
             box-shadow: var(--shadow);
             border: 1px solid var(--border);
         }
-        .progress-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 0.5rem;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-        }
-        .progress-bar {
-            height: 8px;
-            background: #e2e8f0;
-            border-radius: 4px;
-            overflow: hidden;
-        }
-        .progress-fill {
-            height: 100%;
-            background: var(--primary);
-            border-radius: 4px;
-            transition: width 0.3s ease;
-        }
-
-        /* ============ SECTION CARD (Form.gov.sg style) ============ */
+        .progress-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; font-size: 0.85rem; color: var(--text-secondary); }
+        .progress-bar { height: 8px; background: #e2e8f0; border-radius: 4px; overflow: hidden; }
+        .progress-fill { height: 100%; background: var(--primary); border-radius: 4px; transition: width 0.3s ease; width: 0%; }
         .section-card {
             background: var(--white);
             border-radius: var(--radius);
@@ -128,73 +83,25 @@
             border: 1px solid var(--border);
             transition: box-shadow 0.2s;
         }
-        .section-card:hover {
-            box-shadow: var(--shadow-lg);
-        }
-        .section-header {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.75rem;
-            margin-bottom: 1rem;
-        }
+        .section-card:hover { box-shadow: var(--shadow-lg); }
+        .section-header { display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1rem; }
         .section-number {
-            width: 32px;
-            height: 32px;
+            width: 32px; height: 32px;
             background: var(--primary-light);
             color: var(--primary);
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 0.85rem;
-            flex-shrink: 0;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 700; font-size: 0.85rem; flex-shrink: 0;
         }
-        .section-title {
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--text);
-            margin-bottom: 0.15rem;
-        }
-        .section-obj {
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-            font-style: italic;
-        }
-
-        /* ============ DOMAIN QUESTION ============ */
-        .domain-question {
-            margin-bottom: 1.25rem;
-            padding-bottom: 1.25rem;
-            border-bottom: 1px solid var(--border);
-        }
-        .domain-question:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-        .domain-label {
-            font-weight: 600;
-            font-size: 0.9rem;
-            margin-bottom: 0.3rem;
-            color: var(--text);
-        }
-        .domain-question-text {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            margin-bottom: 0.6rem;
-        }
-
-        /* ============ RADIO BUTTONS (Form.gov.sg style) ============ */
-        .radio-group {
-            display: flex;
-            flex-direction: column;
-            gap: 0.4rem;
-        }
+        .section-title { font-size: 1rem; font-weight: 600; color: var(--text); margin-bottom: 0.15rem; }
+        .section-obj { font-size: 0.8rem; color: var(--text-secondary); font-style: italic; }
+        .domain-question { margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border); }
+        .domain-question:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        .domain-label { font-weight: 600; font-size: 0.9rem; margin-bottom: 0.3rem; color: var(--text); }
+        .domain-question-text { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.6rem; }
+        .radio-group { display: flex; flex-direction: column; gap: 0.4rem; }
         .radio-option {
-            display: flex;
-            align-items: center;
-            gap: 0.6rem;
+            display: flex; align-items: center; gap: 0.6rem;
             padding: 0.6rem 0.8rem;
             border: 1px solid var(--border);
             border-radius: var(--radius);
@@ -202,21 +109,9 @@
             transition: all 0.15s;
             font-size: 0.85rem;
         }
-        .radio-option:hover {
-            background: #f8fafc;
-            border-color: #cbd5e1;
-        }
-        .radio-option.selected {
-            background: var(--primary-light);
-            border-color: var(--primary);
-            font-weight: 500;
-        }
-        .radio-option input[type="radio"] {
-            accent-color: var(--primary);
-            width: 16px;
-            height: 16px;
-            cursor: pointer;
-        }
+        .radio-option:hover { background: #f8fafc; border-color: #cbd5e1; }
+        .radio-option.selected { background: var(--primary-light); border-color: var(--primary); font-weight: 500; }
+        .radio-option input[type="radio"] { accent-color: var(--primary); width: 16px; height: 16px; cursor: pointer; }
         .score-badge {
             display: inline-block;
             background: #e2e8f0;
@@ -228,15 +123,8 @@
             margin-left: auto;
             flex-shrink: 0;
         }
-
-        /* ============ RESULTS DASHBOARD ============ */
-        .results-container {
-            display: none;
-            margin-top: 1.5rem;
-        }
-        .results-container.show {
-            display: block;
-        }
+        .results-container { display: none; margin-top: 1.5rem; }
+        .results-container.show { display: block; }
         .tier-card {
             background: var(--white);
             border-radius: var(--radius);
@@ -246,33 +134,11 @@
             text-align: center;
             margin-bottom: 1rem;
         }
-        .tier-card h2 {
-            font-size: 1rem;
-            color: var(--text-secondary);
-            margin-bottom: 0.3rem;
-        }
-        .tier-name {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--primary);
-        }
-        .tier-score {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-        }
-        .tier-desc {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            margin-top: 0.5rem;
-        }
-
-        /* Stats grid */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 0.75rem;
-            margin-bottom: 1rem;
-        }
+        .tier-card h2 { font-size: 1rem; color: var(--text-secondary); margin-bottom: 0.3rem; }
+        .tier-name { font-size: 2rem; font-weight: 700; }
+        .tier-score { font-size: 0.9rem; color: var(--text-secondary); }
+        .tier-desc { font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; }
+        .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin-bottom: 1rem; }
         .stat-card {
             background: var(--white);
             border-radius: var(--radius);
@@ -281,17 +147,8 @@
             box-shadow: var(--shadow);
             border: 1px solid var(--border);
         }
-        .stat-value {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary);
-        }
-        .stat-label {
-            font-size: 0.75rem;
-            color: var(--text-secondary);
-        }
-
-        /* Radar */
+        .stat-value { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
+        .stat-label { font-size: 0.75rem; color: var(--text-secondary); }
         .radar-section {
             background: var(--white);
             border-radius: var(--radius);
@@ -300,12 +157,7 @@
             border: 1px solid var(--border);
             margin-bottom: 1rem;
         }
-        .radar-inner {
-            max-width: 320px;
-            margin: 0 auto;
-        }
-
-        /* Recommendations */
+        .radar-inner { max-width: 320px; margin: 0 auto; }
         .rec-section {
             background: var(--white);
             border-radius: var(--radius);
@@ -328,14 +180,8 @@
             border-radius: var(--radius);
             border-left: 4px solid var(--primary);
         }
-        .rec-domain h4 {
-            font-size: 0.9rem;
-            margin-bottom: 0.4rem;
-        }
-        .rec-domain p {
-            font-size: 0.82rem;
-            color: var(--text-secondary);
-        }
+        .rec-domain h4 { font-size: 0.9rem; margin-bottom: 0.4rem; }
+        .rec-domain p { font-size: 0.82rem; color: var(--text-secondary); margin-bottom:0.3rem; }
         .gap-indicator {
             display: inline-block;
             padding: 0.2rem 0.6rem;
@@ -344,90 +190,47 @@
             font-weight: 600;
             margin-left: 0.5rem;
         }
-        .gap-critical {
-            background: #fee2e2;
-            color: #991b1b;
+        .gap-critical { background: #fee2e2; color: #991b1b; }
+        .gap-moderate { background: #fef3c7; color: #92400e; }
+        .gap-minor { background: #dbeafe; color: #1e40af; }
+        .resource-link {
+            display: inline-block;
+            margin:0.15rem 0.3rem 0.15rem 0;
+            padding:0.2rem 0.6rem;
+            background:#e8f0fe;
+            border-radius:1rem;
+            font-size:0.75rem;
+            color:#1a56db;
+            text-decoration:none;
         }
-        .gap-moderate {
-            background: #fef3c7;
-            color: #92400e;
-        }
-        .gap-minor {
-            background: #dbeafe;
-            color: #1e40af;
-        }
-
-        /* ============ BUTTONS ============ */
+        .resource-link:hover { background:#d0e0fc; }
         .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.4rem;
+            display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
             padding: 0.75rem 1.5rem;
             border-radius: var(--radius);
-            font-weight: 600;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: all 0.15s;
-            border: none;
-            width: 100%;
+            font-weight: 600; font-size: 0.9rem;
+            cursor: pointer; transition: all 0.15s;
+            border: none; width: 100%;
         }
-        .btn-primary {
-            background: var(--primary);
-            color: white;
-        }
-        .btn-primary:hover {
-            background: #1e40af;
-        }
-        .btn-outline {
-            background: white;
-            color: var(--primary);
-            border: 1px solid var(--primary);
-            margin-top: 0.5rem;
-        }
-        .btn-outline:hover {
-            background: var(--primary-light);
-        }
-
-        /* ============ RESPONSIVE ============ */
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-primary:hover { background: #1e40af; }
+        .btn-outline { background: white; color: var(--primary); border: 1px solid var(--primary); margin-top: 0.5rem; }
+        .btn-outline:hover { background: var(--primary-light); }
         @media (max-width: 600px) {
-            .form-container {
-                padding: 0.75rem;
-            }
-            .section-card {
-                padding: 1rem;
-            }
-            .stats-grid {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 0.4rem;
-            }
-            .stat-value {
-                font-size: 1.2rem;
-            }
-            .tier-name {
-                font-size: 1.5rem;
-            }
+            .form-container { padding: 0.75rem; }
+            .section-card { padding: 1rem; }
+            .stats-grid { grid-template-columns: repeat(3, 1fr); gap: 0.4rem; }
+            .stat-value { font-size: 1.2rem; }
+            .tier-name { font-size: 1.5rem; }
         }
-
-        /* Animations */
         @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(12px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity:0; transform:translateY(12px); }
+            to { opacity:1; transform:translateY(0); }
         }
-        .animate-in {
-            animation: fadeUp 0.4s ease forwards;
-        }
+        .animate-in { animation: fadeUp 0.4s ease forwards; }
     </style>
 </head>
 <body>
-
-    <!-- ============ GOV HEADER ============ -->
     <div class="gov-header">
         <div class="gov-header-inner">
             <div class="gov-logo">CT</div>
@@ -438,424 +241,457 @@
         </div>
     </div>
 
-    <!-- ============ FORM CONTAINER ============ -->
     <div class="form-container" id="formContainer">
-
-        <!-- Progress -->
         <div class="progress-section">
-            <div class="progress-header">
-                <span>Progress Assessment</span>
-                <span id="progressPercent">0%</span>
-            </div>
-            <div class="progress-bar">
-                <div class="progress-fill" id="progressFill" style="width:0%;"></div>
-            </div>
+            <div class="progress-header"><span>Progress Assessment</span><span id="progressPercent">0%</span></div>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
         </div>
-
-        <!-- Assessment Form -->
         <div id="assessmentForm"></div>
-
-        <!-- Submit Button -->
-        <button class="btn btn-primary" onclick="calculateResults()" id="submitBtn">
-            📊 Submit Assessment & Lihat Hasil
-        </button>
-
-        <!-- ============ RESULTS (Hidden initially) ============ -->
+        <button class="btn btn-primary" onclick="calculateResults()" id="submitBtn">📊 Submit Assessment & Lihat Hasil</button>
         <div class="results-container" id="resultsContainer">
-            <!-- Tier Card -->
             <div class="tier-card animate-in" id="tierCard"></div>
-
-            <!-- Pillar Stats -->
             <div class="stats-grid animate-in" id="statsGrid"></div>
-
-            <!-- Radar -->
-            <div class="radar-section animate-in">
-                <div class="radar-inner">
-                    <canvas id="radarChart"></canvas>
-                </div>
-            </div>
-
-            <!-- Recommendations -->
+            <div class="radar-section animate-in"><div class="radar-inner"><canvas id="radarChart"></canvas></div></div>
             <div class="rec-section animate-in" id="recSection"></div>
-
-            <!-- Reset -->
             <button class="btn btn-outline" onclick="resetAssessment()">↺ Ulangi Assessment</button>
         </div>
     </div>
 
     <script>
-        // ============================================
-        // FRAMEWORK DEFINITION
-        // ============================================
+        // ── DATA ──────────────────────────────────
         const DOMAINS = [
-            // PEOPLE
-            {
-                id: 'P1',
-                pillar: 'People',
-                name: 'Organization & Roles',
-                question: 'Apakah organisasi telah menetapkan struktur, peran, tanggung jawab, dan sumber daya yang diperlukan untuk melaksanakan fungsi tanggap insiden?',
-                objective: 'Menilai kesiapan organisasi dan SDM.'
-            }, {
-                id: 'P2',
-                pillar: 'People',
-                name: 'Competency & Awareness',
-                question: 'Apakah personel yang terlibat dalam tanggap insiden memperoleh pelatihan dan peningkatan kompetensi secara berkala sesuai dengan tugas dan ancaman yang dihadapi?',
-                objective: 'Menilai kemampuan personel.'
-            }, {
-                id: 'P3',
-                pillar: 'People',
-                name: 'Coordination & Communication',
-                question: 'Apakah organisasi memiliki mekanisme koordinasi dan komunikasi yang efektif dengan unit internal maupun pihak eksternal dalam penanganan insiden?',
-                objective: 'Menilai kolaborasi dan keberlangsungan fungsi.'
-            },
-            // PROCESS
-            {
-                id: 'PR1',
-                pillar: 'Process',
-                name: 'Governance & Procedure',
-                question: 'Apakah organisasi telah memiliki kebijakan, prosedur, dan mekanisme pelaporan insiden yang terdokumentasi dan ditinjau secara berkala?',
-                objective: 'Menilai tata kelola tanggap insiden.'
-            }, {
-                id: 'PR2',
-                pillar: 'Process',
-                name: 'Incident Handling Lifecycle',
-                question: 'Apakah organisasi telah menerapkan proses tanggap insiden yang mencakup persiapan, deteksi dan analisis, containment, eradikasi, serta pemulihan?',
-                objective: 'Menilai implementasi proses inti.'
-            }, {
-                id: 'PR3',
-                pillar: 'Process',
-                name: 'Testing & Continuous Improvement',
-                question: 'Apakah organisasi secara berkala melakukan pengujian, evaluasi, dan perbaikan berkelanjutan terhadap kapabilitas tanggap insiden, termasuk integrasinya dengan rencana keberlangsungan bisnis?',
-                objective: 'Menilai tingkat kematangan proses.'
-            },
-            // TECHNOLOGY
-            {
-                id: 'T1',
-                pillar: 'Technology',
-                name: 'Monitoring & Incident Management',
-                question: 'Apakah organisasi telah menerapkan mekanisme monitoring, logging, dan sistem pendukung untuk mendeteksi, mencatat, dan mengelola insiden keamanan informasi?',
-                objective: 'Menilai kemampuan teknologi dasar.'
-            }, {
-                id: 'T2',
-                pillar: 'Technology',
-                name: 'Threat Intelligence & Visibility',
-                question: 'Apakah organisasi memanfaatkan berbagai sumber informasi, termasuk threat intelligence, untuk meningkatkan kemampuan deteksi dan analisis insiden?',
-                objective: 'Menilai kemampuan analisis dan visibilitas.'
-            }, {
-                id: 'T3',
-                pillar: 'Technology',
-                name: 'Automation & Integration',
-                question: 'Apakah organisasi telah mengotomatisasi dan mengintegrasikan proses monitoring, pelaporan, pengujian, atau respons insiden untuk meningkatkan efektivitas penanganan?',
-                objective: 'Menilai tingkat optimalisasi teknologi.'
-            }
+            { id:'P1', pillar:'People', name:'Organization & Roles', question:'Apakah organisasi telah menetapkan struktur, peran, tanggung jawab, dan sumber daya yang diperlukan untuk melaksanakan fungsi tanggap insiden?', objective:'Menilai kesiapan organisasi dan SDM.' },
+            { id:'P2', pillar:'People', name:'Competency & Awareness', question:'Apakah personel yang terlibat dalam tanggap insiden memperoleh pelatihan dan peningkatan kompetensi secara berkala sesuai dengan tugas dan ancaman yang dihadapi?', objective:'Menilai kemampuan personel.' },
+            { id:'P3', pillar:'People', name:'Coordination & Communication', question:'Apakah organisasi memiliki mekanisme koordinasi dan komunikasi yang efektif dengan unit internal maupun pihak eksternal dalam penanganan insiden?', objective:'Menilai kolaborasi dan keberlangsungan fungsi.' },
+            { id:'PR1', pillar:'Process', name:'Governance & Procedure', question:'Apakah organisasi telah memiliki kebijakan, prosedur, dan mekanisme pelaporan insiden yang terdokumentasi dan ditinjau secara berkala?', objective:'Menilai tata kelola tanggap insiden.' },
+            { id:'PR2', pillar:'Process', name:'Incident Handling Lifecycle', question:'Apakah organisasi telah menerapkan proses tanggap insiden yang mencakup persiapan, deteksi dan analisis, containment, eradikasi, serta pemulihan?', objective:'Menilai implementasi proses inti.' },
+            { id:'PR3', pillar:'Process', name:'Testing & Continuous Improvement', question:'Apakah organisasi secara berkala melakukan pengujian, evaluasi, dan perbaikan berkelanjutan terhadap kapabilitas tanggap insiden, termasuk integrasinya dengan rencana keberlangsungan bisnis?', objective:'Menilai tingkat kematangan proses.' },
+            { id:'T1', pillar:'Technology', name:'Monitoring & Incident Management', question:'Apakah organisasi telah menerapkan mekanisme monitoring, logging, dan sistem pendukung untuk mendeteksi, mencatat, dan mengelola insiden keamanan informasi?', objective:'Menilai kemampuan teknologi dasar.' },
+            { id:'T2', pillar:'Technology', name:'Threat Intelligence & Visibility', question:'Apakah organisasi memanfaatkan berbagai sumber informasi, termasuk threat intelligence, untuk meningkatkan kemampuan deteksi dan analisis insiden?', objective:'Menilai kemampuan analisis dan visibilitas.' },
+            { id:'T3', pillar:'Technology', name:'Automation & Integration', question:'Apakah organisasi telah mengotomatisasi dan mengintegrasikan proses monitoring, pelaporan, pengujian, atau respons insiden untuk meningkatkan efektivitas penanganan?', objective:'Menilai tingkat optimalisasi teknologi.' }
         ];
 
         const SCORE_OPTIONS = [
-            { value: 0, label: 'Belum diterapkan', desc: 'Tidak ada bukti implementasi' },
-            { value: 1, label: 'Dilaksanakan secara ad hoc', desc: 'Tidak terdokumentasi, bergantung individu' },
-            { value: 2, label: 'Terdokumentasi atau diterapkan sebagian', desc: 'Ada dokumen/prosedur, belum konsisten' },
-            { value: 3, label: 'Dilaksanakan secara konsisten dan terukur', desc: 'Proses berjalan, ada pengukuran' },
-            { value: 4, label: 'Dioptimalkan & berkelanjutan', desc: 'Continuous improvement, evaluasi berkala' }
+            { value:0, label:'Belum diterapkan', desc:'Tidak ada bukti implementasi' },
+            { value:1, label:'Dilaksanakan secara ad hoc', desc:'Tidak terdokumentasi, bergantung individu' },
+            { value:2, label:'Terdokumentasi atau diterapkan sebagian', desc:'Ada dokumen/prosedur, belum konsisten' },
+            { value:3, label:'Dilaksanakan secara konsisten dan terukur', desc:'Proses berjalan, ada pengukuran' },
+            { value:4, label:'Dioptimalkan & berkelanjutan', desc:'Continuous improvement, evaluasi berkala' }
         ];
 
         const TIERS = [
-            { name: 'Initial', min: 0, max: 1.49, color: '#dc2626', desc: 'Ad hoc, bergantung individu, belum formal',
-                target: 2 },
-            { name: 'Developing', min: 1.5, max: 2.49, color: '#f59e0b',
-                desc: 'Kebijakan mulai tersedia, implementasi berjalan', target: 3 },
-            { name: 'Established', min: 2.5, max: 3.49, color: '#2563eb',
-                desc: 'Konsisten, terukur, monitoring diterapkan', target: 4 },
-            { name: 'Optimized', min: 3.5, max: 4.0, color: '#059669',
-                desc: 'Continuous improvement, automation, threat intelligence', target: 4 }
+            { id:1, name:'Initial', min:0, max:1.49, color:'#dc2626', desc:'Ad hoc, bergantung individu, belum memiliki proses formal' },
+            { id:2, name:'Developing', min:1.5, max:2.49, color:'#f59e0b', desc:'Kebijakan dan prosedur mulai tersedia, implementasi mulai berjalan' },
+            { id:3, name:'Established', min:2.5, max:3.49, color:'#2563eb', desc:'Proses berjalan konsisten, pengujian dan koordinasi dilakukan, monitoring diterapkan' },
+            { id:4, name:'Optimized', min:3.5, max:4.0, color:'#059669', desc:'Continuous improvement, threat intelligence, automation, integrasi BCP/DRP' }
         ];
 
-        // Recommendations database
+        // RECOMMENDATIONS rewritten to start with "Organisasi perlu …"
         const RECOMMENDATIONS = {
-            'P1': {
-                people: ['Tetapkan struktur CSIRT formal dengan peran terdokumentasi', 'Alokasikan sumber daya dedicated untuk IR'],
-                process: ['Buat kebijakan organisasi CSIRT yang disetujui manajemen',
-                    'Definisikan RACI matrix untuk semua peran IR'
-                ],
-                technology: ['Implementasikan platform manajemen tim IR', 'Sediakan akses ke tools yang diperlukan'],
-                targetTier: 2
+            P1: {
+                target2: {
+                    people:['Organisasi perlu menunjuk seorang Incident Response Coordinator.','Organisasi perlu mendefinisikan peran dan tanggung jawab dasar tim IR.'],
+                    process:['Organisasi perlu menyusun draft kebijakan IR sederhana.','Organisasi perlu membuat dan mensahkan daftar kontak eskalasi.'],
+                    technology:['Organisasi perlu menyediakan sarana komunikasi khusus (email group, telepon darurat).','Organisasi perlu menyiapkan repositori bersama untuk dokumen IR.'],
+                    resources:[
+                        {name:'FIRST CSIRT Services Framework', url:'https://www.first.org/standards/frameworks/'},
+                        {name:'NIST SP 800-61 Rev.2 (Section 2.2)', url:'https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf'},
+                        {name:'ENISA CSIRT Setting up Guide', url:'https://www.enisa.europa.eu/topics/incident-response/csirt-inventory/csirt-setting-up-guide'}
+                    ]
+                },
+                target3: {
+                    people:['Organisasi perlu menetapkan struktur CSIRT formal dengan uraian tugas tertulis.','Organisasi perlu merekrut atau mengalokasikan personel dedicated untuk IR.'],
+                    process:['Organisasi perlu mengesahkan kebijakan IR dan memperoleh persetujuan manajemen puncak.','Organisasi perlu mendefinisikan matriks RACI untuk seluruh peran.'],
+                    technology:['Organisasi perlu mengimplementasikan sistem ticketing untuk penanganan insiden.','Organisasi perlu menyediakan perangkat kerja khusus bagi tim IR.'],
+                    resources:[
+                        {name:'CSIRT Staffing Models (CERT/CC)', url:'https://www.sei.cmu.edu/publications/reports/08tr017'},
+                        {name:'FIRST CSIRT Services Framework', url:'https://www.first.org/standards/frameworks/'}
+                    ]
+                },
+                target4: {
+                    people:['Organisasi perlu mengembangkan jenjang karir bagi personel IR.','Organisasi perlu mengadakan program rotasi dan mentoring berkala.'],
+                    process:['Organisasi perlu mengintegrasikan CSIRT ke dalam tata kelola organisasi.','Organisasi perlu melakukan evaluasi kinerja CSIRT secara periodik.'],
+                    technology:['Organisasi perlu menggunakan platform manajemen kasus IR (TheHive).','Organisasi perlu mengintegrasikan sistem IR dengan HR dan legal.'],
+                    resources:[
+                        {name:'TheHive Project', url:'https://thehive-project.org/'},
+                        {name:'NIST SP 800-61 Rev.2', url:'https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf'}
+                    ]
+                }
             },
-            'P2': {
-                people: ['Lakukan asesmen kompetensi tim IR', 'Berikan pelatihan teknis (forensik, malware analysis)'],
-                process: ['Tetapkan standar kompetensi minimum', 'Buat program pengembangan karir IR'],
-                technology: ['Sediakan lab pelatihan', 'Akses platform e-learning keamanan'],
-                targetTier: 2
+            P2: {
+                target2: {
+                    people:['Organisasi perlu mengidentifikasi kesenjangan kompetensi dasar.','Organisasi perlu memberikan pelatihan pengenalan IR kepada seluruh personel.'],
+                    process:['Organisasi perlu membuat daftar kebutuhan pelatihan minimum.','Organisasi perlu menetapkan jadwal pelatihan tahunan.'],
+                    technology:['Organisasi perlu memberikan akses ke platform e‑learning gratis.','Organisasi perlu menyediakan lab sederhana untuk praktik.'],
+                    resources:[
+                        {name:'SANS Security Awareness Training', url:'https://www.sans.org/security-awareness-training/'},
+                        {name:'CISA Cyber Essentials Toolkit', url:'https://www.cisa.gov/cyber-essentials'},
+                        {name:'NICE Framework (NIST 800-181)', url:'https://www.nist.gov/nice'}
+                    ]
+                },
+                target3: {
+                    people:['Organisasi perlu melakukan asesmen kompetensi formal.','Organisasi perlu memberikan pelatihan teknis (forensik digital, analisis malware).'],
+                    process:['Organisasi perlu menetapkan standar kompetensi minimum tiap peran.','Organisasi perlu membuat program sertifikasi internal.'],
+                    technology:['Organisasi perlu berlangganan platform e‑learning profesional.','Organisasi perlu menyediakan lab forensik khusus.'],
+                    resources:[
+                        {name:'ENISA Cybersecurity Training', url:'https://www.enisa.europa.eu/topics/training'},
+                        {name:'Cyber Range - THREAT Alerts', url:'https://www.threatalerts.io/'}
+                    ]
+                },
+                target4: {
+                    people:['Organisasi perlu mensponsori sertifikasi GCIH/GCFA.','Organisasi perlu mengirim personel ke konferensi keamanan internasional.'],
+                    process:['Organisasi perlu mengevaluasi kompetensi berbasis KPI.','Organisasi perlu merotasi personel untuk cross‑training.'],
+                    technology:['Organisasi perlu menyediakan cyber range untuk simulasi.','Organisasi perlu menggunakan platform serangan real‑time untuk latihan.'],
+                    resources:[
+                        {name:'SANS Cyber Aces', url:'https://www.sans.org/cyberaces/'},
+                        {name:'GIAC Certification', url:'https://www.giac.org/'}
+                    ]
+                }
             },
-            'P3': {
-                people: ['Bangun hubungan dengan CERT nasional/BSSN', 'Tunjuk liaison officer untuk koordinasi eksternal'],
-                process: ['Tetapkan SOP koordinasi dan eskalasi', 'Buat direktori kontak stakeholder'],
-                technology: ['Gunakan platform berbagi informasi (MISP)', 'Partisipasi di komunitas threat intelligence'],
-                targetTier: 2
+            P3: {
+                target2: {
+                    people:['Organisasi perlu mengidentifikasi seluruh stakeholder kunci.','Organisasi perlu menunjuk contact person untuk koordinasi.'],
+                    process:['Organisasi perlu membuat dan mendistribusikan daftar kontak eskalasi.','Organisasi perlu menetapkan jalur komunikasi darurat.'],
+                    technology:['Organisasi perlu menggunakan email group untuk koordinasi.','Organisasi perlu menyiapkan nomor kontak 24/7.'],
+                    resources:[
+                        {name:'FIRST Traffic Light Protocol (TLP)', url:'https://www.first.org/tlp'}
+                    ]
+                },
+                target3: {
+                    people:['Organisasi perlu membangun hubungan formal dengan CERT nasional/BSSN.','Organisasi perlu menunjuk liaison officer untuk koordinasi eksternal.'],
+                    process:['Organisasi perlu menetapkan SOP koordinasi dan eskalasi.','Organisasi perlu menandatangani MOU dengan mitra eksternal.'],
+                    technology:['Organisasi perlu menggunakan platform komunikasi aman.','Organisasi perlu mengikuti forum berbagi threat intelligence.'],
+                    resources:[
+                        {name:'MISP - Open Source Threat Sharing', url:'https://www.misp-project.org/'},
+                        {name:'ENISA Cooperation Group', url:'https://www.enisa.europa.eu/topics/incident-response'}
+                    ]
+                },
+                target4: {
+                    people:['Organisasi perlu memimpin komunitas IR di sektor Anda.','Organisasi perlu menjalin kerjasama internasional.'],
+                    process:['Organisasi perlu melakukan latihan bersama (joint exercise).','Organisasi perlu berkontribusi pada komunitas threat intelligence global.'],
+                    technology:['Organisasi perlu menerapkan platform berbagi informasi real‑time (MISP).','Organisasi perlu mengotomatisasi pertukaran ancaman.'],
+                    resources:[
+                        {name:'MISP Project', url:'https://www.misp-project.org/'},
+                        {name:'FIRST TLP', url:'https://www.first.org/tlp'}
+                    ]
+                }
             },
-            'PR1': {
-                people: ['Tunjuk penanggung jawab kebijakan IR', 'Sosialisasikan kebijakan ke seluruh organisasi'],
-                process: ['Dokumentasikan kebijakan IR formal', 'Tetapkan siklus review kebijakan (minimal tahunan)'],
-                technology: ['Implementasikan document management system', 'Gunakan GRC platform untuk tracking kebijakan'],
-                targetTier: 2
+            PR1: {
+                target2: {
+                    people:['Organisasi perlu menunjuk penanggung jawab kebijakan IR.','Organisasi perlu mensosialisasikan urgensi IR ke manajemen.'],
+                    process:['Organisasi perlu membuat kebijakan IR dalam bentuk draft.','Organisasi perlu menyusun prosedur pelaporan insiden sederhana.'],
+                    technology:['Organisasi perlu menyediakan template dokumen kebijakan.','Organisasi perlu menyiapkan repositori dokumen bersama.'],
+                    resources:[
+                        {name:'IRM (Cert-SG) - Incident Response Methodologies', url:'https://github.com/certsocietegenerale/IRM/tree/main/EN'},
+                        {name:'SANS IR Policy Template', url:'https://www.sans.org/information-security-policy/'}
+                    ]
+                },
+                target3: {
+                    people:['Organisasi perlu melatih seluruh pemangku kepentingan tentang kebijakan IR.','Organisasi perlu menunjuk compliance officer.'],
+                    process:['Organisasi perlu mengesahkan dan meratifikasi kebijakan IR.','Organisasi perlu menetapkan siklus peninjauan tahunan.'],
+                    technology:['Organisasi perlu menggunakan document management system.','Organisasi perlu menerapkan platform GRC untuk pemantauan kepatuhan.'],
+                    resources:[
+                        {name:'NIST SP 800-61 Rev.2', url:'https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf'},
+                        {name:'ISO/IEC 27035-2:2016', url:'https://www.iso.org/standard/62073.html'}
+                    ]
+                },
+                target4: {
+                    people:['Organisasi perlu menanamkan budaya IR ke seluruh organisasi.','Organisasi perlu melaporkan status IR ke dewan direksi.'],
+                    process:['Organisasi perlu mengotomatisasi peninjauan dan pembaruan kebijakan.','Organisasi perlu mengintegrasikan IR ke dalam manajemen risiko perusahaan.'],
+                    technology:['Organisasi perlu menerapkan pemantauan kepatuhan otomatis.','Organisasi perlu menyediakan dasbor kebijakan real‑time.'],
+                    resources:[
+                        {name:'CIS Controls v8', url:'https://www.cisecurity.org/controls/'}
+                    ]
+                }
             },
-            'PR2': {
-                people: ['Latih tim dalam IR lifecycle (NIST 800-61)', 'Tunjuk IR team lead untuk setiap fase'],
-                process: ['Dokumentasikan SOP per fase IR', 'Implementasikan klasifikasi dan prioritas insiden'],
-                technology: ['Deploy IR case management system', 'Integrasikan dengan SIEM untuk alerting'],
-                targetTier: 2
+            PR2: {
+                target2: {
+                    people:['Organisasi perlu melatih tim tentang siklus IR dasar.','Organisasi perlu menunjuk pemimpin untuk setiap fase IR.'],
+                    process:['Organisasi perlu mendokumentasikan SOP tiap fase IR.','Organisasi perlu membuat checklist penanganan insiden.'],
+                    technology:['Organisasi perlu menyediakan template dokumentasi insiden.','Organisasi perlu menggunakan spreadsheet untuk pelacakan.'],
+                    resources:[
+                        {name:'SANS Incident Handler\'s Handbook', url:'https://www.sans.org/incident-handlers-handbook/'},
+                        {name:'NIST SP 800-61 Rev.2 Lifecycle', url:'https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf'}
+                    ]
+                },
+                target3: {
+                    people:['Organisasi perlu melakukan simulasi insiden berkala.','Organisasi perlu mensertifikasi personel sebagai IR handler.'],
+                    process:['Organisasi perlu menerapkan siklus penuh NIST 800-61.','Organisasi perlu menetapkan SLA berdasarkan tingkat keparahan.'],
+                    technology:['Organisasi perlu menggunakan sistem manajemen kasus IR.','Organisasi perlu mengintegrasikan IR dengan SIEM.'],
+                    resources:[
+                        {name:'CREST Cyber Security Incident Response Guide', url:'https://www.crest-approved.org/wp-content/uploads/2023/03/CREST-Cyber-Security-Incident-Response-Guide.pdf'},
+                        {name:'The DFIR Report', url:'https://thedfirreport.com/'}
+                    ]
+                },
+                target4: {
+                    people:['Organisasi perlu melakukan red team/blue team exercise.','Organisasi perlu mengembangkan spesialisasi per jenis insiden.'],
+                    process:['Organisasi perlu menjalankan playbook otomatis.','Organisasi perlu melakukan continuous process improvement.'],
+                    technology:['Organisasi perlu mengadopsi platform SOAR.','Organisasi perlu mengotomatisasi penahanan dan pemulihan.'],
+                    resources:[
+                        {name:'Shuffle SOAR', url:'https://shuffler.io/'},
+                        {name:'TheHive + Cortex', url:'https://thehive-project.org/'}
+                    ]
+                }
             },
-            'PR3': {
-                people: ['Libatkan tim BCP/DRP dalam pengujian', 'Tunjuk koordinator exercise'],
-                process: ['Jadwalkan tabletop exercise berkala', 'Dokumentasikan lessons learned'],
-                technology: ['Gunakan platform simulasi insiden', 'Implementasikan metrics dashboard'],
-                targetTier: 2
+            PR3: {
+                target2: {
+                    people:['Organisasi perlu menunjuk koordinator latihan.','Organisasi perlu melibatkan tim IT dalam pengujian.'],
+                    process:['Organisasi perlu menjadwalkan tabletop exercise.','Organisasi perlu mendokumentasikan hasil pengujian.'],
+                    technology:['Organisasi perlu menyimulasikan skenario sederhana.','Organisasi perlu menyediakan checklist evaluasi.'],
+                    resources:[
+                        {name:'CISA Tabletop Exercise Package', url:'https://www.cisa.gov/tabletop-exercise-packages'},
+                        {name:'NIST SP 800-84', url:'https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-84.pdf'}
+                    ]
+                },
+                target3: {
+                    people:['Organisasi perlu melibatkan tim BCP/DRP.','Organisasi perlu menggunakan fasilitator eksternal.'],
+                    process:['Organisasi perlu melaksanakan program latihan triwulanan.','Organisasi perlu mengintegrasikan lessons learned ke dalam perbaikan.'],
+                    technology:['Organisasi perlu menggunakan platform simulasi insiden.','Organisasi perlu menerapkan dasbor metrik kinerja.'],
+                    resources:[
+                        {name:'MITRE ATT&CK', url:'https://attack.mitre.org/'},
+                        {name:'Lessons Learned Template (CERT/CC)', url:'https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=538932'}
+                    ]
+                },
+                target4: {
+                    people:['Organisasi perlu mengotomatisasi pembuatan skenario latihan.','Organisasi perlu melakukan latihan lintas organisasi.'],
+                    process:['Organisasi perlu menjalankan program pengujian berkelanjutan.','Organisasi perlu memanfaatkan rekomendasi berbasis AI untuk perbaikan.'],
+                    technology:['Organisasi perlu menggunakan platform pengujian otomatis.','Organisasi perlu menerapkan analitik kinerja real‑time.'],
+                    resources:[
+                        {name:'MITRE ATT&CK Evaluations', url:'https://attack.mitre.org/'}
+                    ]
+                }
             },
-            'T1': {
-                people: ['Latih tim monitoring 24/7', 'Tunjuk SOC analyst'],
-                process: ['Tetapkan prosedur monitoring dan alerting', 'Definisikan SLA respons'],
-                technology: ['Deploy SIEM/EDR', 'Implementasikan centralized logging'],
-                targetTier: 2
+            T1: {
+                target2: {
+                    people:['Organisasi perlu melatih personel IT dalam monitoring dasar.','Organisasi perlu menunjuk personel on‑call.'],
+                    process:['Organisasi perlu mengaktifkan logging di seluruh sistem kritikal.','Organisasi perlu membuat prosedur alerting dasar.'],
+                    technology:['Organisasi perlu mengaktifkan Windows Event Log / Syslog.','Organisasi perlu mengkonfigurasi notifikasi email untuk kejadian kritis.'],
+                    resources:[
+                        {name:'Elastic Security (SIEM)', url:'https://www.elastic.co/security'},
+                        {name:'Wazuh (XDR/SIEM)', url:'https://wazuh.com/'}
+                    ]
+                },
+                target3: {
+                    people:['Organisasi perlu membentuk tim SOC / monitoring.','Organisasi perlu melatih analis keamanan.'],
+                    process:['Organisasi perlu menerapkan pemantauan 24/7.','Organisasi perlu menetapkan SLA penanganan.'],
+                    technology:['Organisasi perlu men-deploy SIEM.','Organisasi perlu menerapkan centralized logging.'],
+                    resources:[
+                        {name:'Sigma Rules', url:'https://github.com/SigmaHQ/sigma'},
+                        {name:'OSSEC', url:'https://www.ossec.net/'}
+                    ]
+                },
+                target4: {
+                    people:['Organisasi perlu merekrut spesialis threat hunter.','Organisasi perlu melibatkan data scientist.'],
+                    process:['Organisasi perlu melakukan proactive threat hunting.','Organisasi perlu menerapkan behavioral analytics.'],
+                    technology:['Organisasi perlu men-deploy EDR/XDR.','Organisasi perlu menggunakan deteksi anomali berbasis AI.'],
+                    resources:[
+                        {name:'Wazuh XDR', url:'https://wazuh.com/'},
+                        {name:'Elastic Security', url:'https://www.elastic.co/security'}
+                    ]
+                }
             },
-            'T2': {
-                people: ['Latih analis threat intelligence', 'Bangun tim CTI'],
-                process: ['Integrasikan CTI ke proses IR', 'Tetapkan siklus intelligence reporting'],
-                technology: ['Deploy Threat Intelligence Platform (TIP)', 'Integrasikan IOC feeds ke SIEM'],
-                targetTier: 2
+            T2: {
+                target2: {
+                    people:['Organisasi perlu melatih dasar threat intelligence.','Organisasi perlu menunjuk personel riset ancaman.'],
+                    process:['Organisasi perlu berlangganan threat feed open‑source.','Organisasi perlu membuat laporan ancaman bulanan.'],
+                    technology:['Organisasi perlu memantau OSINT feeds.','Organisasi perlu menggunakan Twitter/list untuk monitoring ancaman.'],
+                    resources:[
+                        {name:'AlienVault OTX', url:'https://otx.alienvault.com/'},
+                        {name:'CISA Known Exploited Vulnerabilities Catalog', url:'https://www.cisa.gov/known-exploited-vulnerabilities-catalog'}
+                    ]
+                },
+                target3: {
+                    people:['Organisasi perlu membentuk tim CTI khusus.','Organisasi perlu mensertifikasi personel di bidang threat intelligence.'],
+                    process:['Organisasi perlu mengintegrasikan CTI ke dalam proses IR.','Organisasi perlu menetapkan siklus intelligence.'],
+                    technology:['Organisasi perlu men-deploy Threat Intelligence Platform (TIP).','Organisasi perlu mengintegrasikan IOC feed ke SIEM.'],
+                    resources:[
+                        {name:'MISP Project', url:'https://www.misp-project.org/'},
+                        {name:'OpenCTI', url:'https://github.com/OpenCTI-Platform/opencti'}
+                    ]
+                },
+                target4: {
+                    people:['Organisasi perlu merekrut threat researcher.','Organisasi perlu berkontribusi pada komunitas global.'],
+                    process:['Organisasi perlu menerapkan predictive threat intelligence.','Organisasi perlu mengotomatisasi diseminasi intelligence.'],
+                    technology:['Organisasi perlu menggunakan analisis ancaman berbasis AI.','Organisasi perlu menerapkan platform threat hunting real‑time.'],
+                    resources:[
+                        {name:'MITRE ATT&CK', url:'https://attack.mitre.org/'},
+                        {name:'OpenCTI', url:'https://github.com/OpenCTI-Platform/opencti'}
+                    ]
+                }
             },
-            'T3': {
-                people: ['Latih tim dalam SOAR development', 'Tunjuk automation engineer'],
-                process: ['Identifikasi proses yang bisa diotomatisasi', 'Tetapkan metrik efektivitas otomatisasi'],
-                technology: ['Deploy SOAR platform', 'Integrasikan API antar tools keamanan'],
-                targetTier: 2
+            T3: {
+                target2: {
+                    people:['Organisasi perlu mengidentifikasi proses yang dapat diotomatisasi.','Organisasi perlu melatih dasar scripting.'],
+                    process:['Organisasi perlu mendokumentasikan proses manual.','Organisasi perlu memprioritaskan otomatisasi berdasarkan dampak.'],
+                    technology:['Organisasi perlu menggunakan skrip untuk tugas rutin.','Organisasi perlu menerapkan scheduled tasks / cron.'],
+                    resources:[
+                        {name:'n8n - workflow automation', url:'https://n8n.io/'},
+                        {name:'Shuffle SOAR', url:'https://shuffler.io/'}
+                    ]
+                },
+                target3: {
+                    people:['Organisasi perlu merekrut automation engineer.','Organisasi perlu melatih tim dalam penggunaan SOAR.'],
+                    process:['Organisasi perlu mengimplementasikan playbook otomatis.','Organisasi perlu mengukur efektivitas otomatisasi.'],
+                    technology:['Organisasi perlu men-deploy platform SOAR.','Organisasi perlu mengintegrasikan API antar perangkat keamanan.'],
+                    resources:[
+                        {name:'TheHive + Cortex', url:'https://thehive-project.org/'},
+                        {name:'Shuffle SOAR', url:'https://shuffler.io/'}
+                    ]
+                },
+                target4: {
+                    people:['Organisasi perlu merekrut AI/ML engineer.','Organisasi perlu mengintegrasikan DevSecOps.'],
+                    process:['Organisasi perlu membangun pipeline IR otomatis penuh.','Organisasi perlu menerapkan self‑healing systems.'],
+                    technology:['Organisasi perlu menggunakan SOAR berbasis AI.','Organisasi perlu menerapkan respons otonom.'],
+                    resources:[
+                        {name:'FIRST CVSS v4.0 Calculator', url:'https://www.first.org/cvss/'},
+                        {name:'Cortex (TheHive)', url:'https://github.com/TheHive-Project/Cortex'}
+                    ]
+                }
             }
         };
 
-        // ============================================
-        // BUILD FORM
-        // ============================================
+        // ── BUILD FORM ──────────────────────────
         function buildForm() {
             const form = document.getElementById('assessmentForm');
-            let html = '';
-
-            let currentPillar = '';
-            DOMAINS.forEach((domain, index) => {
-                if (domain.pillar !== currentPillar) {
-                    currentPillar = domain.pillar;
-                    html += `
-                <div class="section-card">
-                  <div class="section-header">
-                    <div class="section-number">${currentPillar === 'People' ? '👥' : currentPillar === 'Process' ? '🔄' : '💻'}</div>
-                    <div>
-                      <div class="section-title" style="font-size:1.1rem;">${currentPillar}</div>
-                    </div>
-                  </div>`;
+            let html = '', currentPillar = '';
+            DOMAINS.forEach((d, idx) => {
+                if (d.pillar !== currentPillar) {
+                    if (currentPillar) html += '</div>';
+                    currentPillar = d.pillar;
+                    html += `<div class="section-card"><div class="section-header"><div class="section-number">${currentPillar==='People'?'👥':currentPillar==='Process'?'🔄':'💻'}</div><div><div class="section-title" style="font-size:1.1rem;">${currentPillar}</div></div></div>`;
                 }
-
-                html += `
-                <div class="domain-question">
-                  <div class="domain-label">${domain.id}. ${domain.name}</div>
-                  <div class="domain-question-text">${domain.question}</div>
-                  <div class="section-obj" style="margin-bottom:0.5rem;">🎯 ${domain.objective}</div>
-                  <div class="radio-group">`;
-
+                html += `<div class="domain-question"><div class="domain-label">${d.id}. ${d.name}</div><div class="domain-question-text">${d.question}</div><div class="section-obj" style="margin-bottom:0.5rem;">🎯 ${d.objective}</div><div class="radio-group">`;
                 SCORE_OPTIONS.forEach(opt => {
-                    html += `
-                    <label class="radio-option" data-domain="${domain.id}" data-value="${opt.value}" onclick="selectOption(this, '${domain.id}', ${opt.value})">
-                      <input type="radio" name="${domain.id}" value="${opt.value}" id="${domain.id}_${opt.value}">
-                      <div>
-                        <div style="font-weight:500;">${opt.label}</div>
-                        <div style="font-size:0.75rem;color:#64748b;">${opt.desc}</div>
-                      </div>
-                      <span class="score-badge">Skor ${opt.value}</span>
-                    </label>`;
+                    html += `<label class="radio-option" data-domain="${d.id}" data-value="${opt.value}" onclick="selectOption(this, '${d.id}', ${opt.value})"><input type="radio" name="${d.id}" value="${opt.value}" id="${d.id}_${opt.value}"><div><div style="font-weight:500;">${opt.label}</div><div style="font-size:0.75rem;color:#64748b;">${opt.desc}</div></div><span class="score-badge">Skor ${opt.value}</span></label>`;
                 });
-
                 html += `</div></div>`;
-
-                // Close section if last domain in pillar
-                const nextDomain = DOMAINS[index + 1];
-                if (!nextDomain || nextDomain.pillar !== currentPillar) {
-                    html += `</div>`;
-                }
+                if (!DOMAINS[idx+1] || DOMAINS[idx+1].pillar !== currentPillar) html += `</div>`;
             });
-
             form.innerHTML = html;
             updateProgress();
         }
 
-        // ============================================
-        // INTERACTIONS
-        // ============================================
         function selectOption(labelEl, domainId, value) {
-            // Remove selected from siblings
             const parent = labelEl.parentElement;
             parent.querySelectorAll('.radio-option').forEach(el => el.classList.remove('selected'));
-            // Add selected
             labelEl.classList.add('selected');
-            // Check radio
             document.getElementById(`${domainId}_${value}`).checked = true;
             updateProgress();
         }
 
         function updateProgress() {
-            const total = DOMAINS.length;
             let answered = 0;
-            DOMAINS.forEach(d => {
-                const checked = document.querySelector(`input[name="${d.id}"]:checked`);
-                if (checked && checked.value !== '') answered++;
-            });
-            const pct = Math.round((answered / total) * 100);
+            DOMAINS.forEach(d => { if (document.querySelector(`input[name="${d.id}"]:checked`)) answered++; });
+            const pct = Math.round((answered / DOMAINS.length) * 100);
             document.getElementById('progressPercent').textContent = pct + '%';
             document.getElementById('progressFill').style.width = pct + '%';
         }
 
-        // ============================================
-        // CALCULATE RESULTS
-        // ============================================
+        // ── CALCULATE RESULTS ───────────────────
         let radarChart = null;
-
         function calculateResults() {
-            // Collect scores
             const scores = {};
             DOMAINS.forEach(d => {
                 const checked = document.querySelector(`input[name="${d.id}"]:checked`);
                 scores[d.id] = checked ? parseInt(checked.value) : 0;
             });
+            const people = DOMAINS.filter(d=>d.pillar==='People').map(d=>scores[d.id]);
+            const process = DOMAINS.filter(d=>d.pillar==='Process').map(d=>scores[d.id]);
+            const tech = DOMAINS.filter(d=>d.pillar==='Technology').map(d=>scores[d.id]);
+            const pAvg = avg(people), prAvg = avg(process), tAvg = avg(tech);
+            const overall = (pAvg + prAvg + tAvg) / 3;
 
-            // Calculate averages
-            const peopleScores = DOMAINS.filter(d => d.pillar === 'People').map(d => scores[d.id]);
-            const processScores = DOMAINS.filter(d => d.pillar === 'Process').map(d => scores[d.id]);
-            const techScores = DOMAINS.filter(d => d.pillar === 'Technology').map(d => scores[d.id]);
-
-            const peopleAvg = avg(peopleScores);
-            const processAvg = avg(processScores);
-            const techAvg = avg(techScores);
-            const overall = (peopleAvg + processAvg + techAvg) / 3;
-
-            // Determine tier
             let currentTier = TIERS[0];
-            for (let i = TIERS.length - 1; i >= 0; i--) {
-                if (overall >= TIERS[i].min) { currentTier = TIERS[i]; break; }
-            }
+            for (let i=TIERS.length-1; i>=0; i--) { if (overall >= TIERS[i].min) { currentTier = TIERS[i]; break; } }
+            const targetTier = currentTier.id < 4 ? TIERS[currentTier.id] : currentTier;
 
-            // Target tier
-            let targetTier = TIERS.find(t => t.target === currentTier.target + 1 > 4 ? 4 : currentTier.target + 1) ||
-                TIERS[3];
-            if (currentTier.name === 'Optimized') targetTier = currentTier;
-
-            // Show results
             document.getElementById('resultsContainer').classList.add('show');
-            document.getElementById('resultsContainer').scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('resultsContainer').scrollIntoView({behavior:'smooth'});
 
-            // Tier card
             document.getElementById('tierCard').innerHTML = `
-            <h2>Current Maturity Tier</h2>
-            <div class="tier-name" style="color:${currentTier.color};">${currentTier.name}</div>
-            <div class="tier-score">Overall Score: <strong>${overall.toFixed(2)}</strong> / 4.00</div>
-            <div class="tier-desc">${currentTier.desc}</div>
-          `;
+                <h2>Current Maturity Tier</h2>
+                <div class="tier-name" style="color:${currentTier.color};">${currentTier.name}</div>
+                <div class="tier-score">Overall Score: <strong>${overall.toFixed(2)}</strong> / 4.00</div>
+                <div class="tier-desc">${currentTier.desc}</div>`;
 
-            // Stats
             document.getElementById('statsGrid').innerHTML = `
-            <div class="stat-card"><div class="stat-value">${peopleAvg.toFixed(2)}</div><div class="stat-label">👥 People</div></div>
-            <div class="stat-card"><div class="stat-value">${processAvg.toFixed(2)}</div><div class="stat-label">🔄 Process</div></div>
-            <div class="stat-card"><div class="stat-value">${techAvg.toFixed(2)}</div><div class="stat-label">💻 Technology</div></div>
-          `;
+                <div class="stat-card"><div class="stat-value">${pAvg.toFixed(2)}</div><div class="stat-label">👥 People</div></div>
+                <div class="stat-card"><div class="stat-value">${prAvg.toFixed(2)}</div><div class="stat-label">🔄 Process</div></div>
+                <div class="stat-card"><div class="stat-value">${tAvg.toFixed(2)}</div><div class="stat-label">💻 Technology</div></div>`;
 
-            // Radar
-            updateRadar(peopleAvg, processAvg, techAvg);
-
-            // Recommendations
+            updateRadar(pAvg, prAvg, tAvg);
             buildRecommendations(scores, currentTier, targetTier);
         }
 
-        function avg(arr) {
-            return arr.reduce((a, b) => a + b, 0) / arr.length;
-        }
+        function avg(arr) { return arr.reduce((a,b)=>a+b,0)/arr.length; }
 
-        function updateRadar(people, process, tech) {
+        function updateRadar(p, pr, t) {
             const ctx = document.getElementById('radarChart').getContext('2d');
             if (radarChart) radarChart.destroy();
             radarChart = new Chart(ctx, {
-                type: 'radar',
-                data: {
-                    labels: ['People', 'Process', 'Technology'],
-                    datasets: [{
-                        label: 'Current Maturity',
-                        data: [people, process, tech],
-                        backgroundColor: 'rgba(26, 86, 219, 0.15)',
-                        borderColor: '#1a56db',
-                        borderWidth: 2,
-                        pointBackgroundColor: '#1a56db',
-                        pointRadius: 5
-                    }]
-                },
-                options: {
-                    scales: { r: { beginAtZero: true, max: 4, ticks: { stepSize: 1 } } },
-                    plugins: { legend: { display: false } }
-                }
+                type:'radar',
+                data:{ labels:['People','Process','Technology'], datasets:[{ label:'Current Maturity', data:[p,pr,t], backgroundColor:'rgba(26,86,219,0.15)', borderColor:'#1a56db', borderWidth:2, pointBackgroundColor:'#1a56db', pointRadius:5 }] },
+                options:{ scales:{ r:{ beginAtZero:true, max:4, ticks:{ stepSize:1 } } }, plugins:{ legend:{display:false} } }
             });
         }
 
         function buildRecommendations(scores, currentTier, targetTier) {
             let html = '';
-
-            // Target tier box
-            if (currentTier.name !== 'Optimized') {
-                html += `
-              <div class="target-tier-box">
-                <strong>🎯 Target Tier:</strong> ${targetTier.name}
-                <span style="font-size:0.85rem;display:block;margin-top:0.3rem;">Rekomendasi untuk mencapai tier berikutnya</span>
-              </div>`;
+            if (currentTier.id < 4) {
+                html += `<div class="target-tier-box"><strong>🎯 Target Tier Selanjutnya:</strong> ${targetTier.name}<span style="font-size:0.85rem;display:block;margin-top:0.3rem;">Rekomendasi untuk mencapai <strong>Tier ${targetTier.id}: ${targetTier.name}</strong></span><span style="font-size:0.8rem;color:#64748b;display:block;margin-top:0.2rem;">Current: Tier ${currentTier.id} (${currentTier.name}) → Target: Tier ${targetTier.id} (${targetTier.name})</span></div>`;
             } else {
-                html += `
-              <div class="target-tier-box" style="background:#d1fae5;border-color:#10b981;">
-                <strong>✅ Tier Optimized Tercapai!</strong>
-                <span style="font-size:0.85rem;display:block;margin-top:0.3rem;">Continuous improvement untuk mempertahankan</span>
-              </div>`;
+                html += `<div class="target-tier-box" style="background:#d1fae5;border-color:#10b981;"><strong>✅ Tier Optimized Tercapai!</strong><span style="font-size:0.85rem;display:block;margin-top:0.3rem;">Pertahankan dan tingkatkan continuously. Berikut rekomendasi untuk sustaining excellence:</span></div>`;
             }
-
-            // Per-domain recommendations (only if below target)
+            const targetId = targetTier.id;
+            const recKey = `target${targetId}`;
             DOMAINS.forEach(d => {
                 const score = scores[d.id];
-                const targetScore = targetTier.target;
-                if (score < targetScore || currentTier.name === 'Optimized') {
-                    const gap = targetScore - score;
-                    const gapClass = gap >= 3 ? 'gap-critical' : gap >= 2 ? 'gap-moderate' : 'gap-minor';
-                    const rec = RECOMMENDATIONS[d.id] || { people: [], process: [], technology: [] };
+                const gap = targetId - score;
+                if (gap > 0 || currentTier.id === 4) {
+                    const gapClass = gap>=3?'gap-critical':gap>=2?'gap-moderate':'gap-minor';
+                    const rec = RECOMMENDATIONS[d.id];
+                    let pRec=[], prRec=[], tRec=[], resources=[];
+                    if (rec && rec[recKey]) {
+                        pRec = rec[recKey].people || [];
+                        prRec = rec[recKey].process || [];
+                        tRec = rec[recKey].technology || [];
+                        resources = rec[recKey].resources || [];
+                    }
+                    if (!pRec.length) pRec = ['Organisasi perlu meningkatkan kesadaran dan kompetensi tim IR.'];
+                    if (!prRec.length) prRec = ['Organisasi perlu mendokumentasikan dan menstandarisasi prosedur IR.'];
+                    if (!tRec.length) tRec = ['Organisasi perlu mengevaluasi dan mengimplementasikan tools yang sesuai.'];
 
-                    html += `
-                <div class="rec-domain">
-                  <h4>${d.id}. ${d.name} <span class="gap-indicator ${gapClass}">Skor: ${score}/4 → Target: ${targetScore}/4</span></h4>
-                  <p><strong>👥 People:</strong> ${rec.people.join('; ') || 'Tingkatkan kesadaran dan kompetensi tim.'}</p>
-                  <p><strong>🔄 Process:</strong> ${rec.process.join('; ') || 'Dokumentasikan dan standarisasi prosedur.'}</p>
-                  <p><strong>💻 Technology:</strong> ${rec.technology.join('; ') || 'Evaluasi dan implementasikan tools yang sesuai.'}</p>
-                </div>`;
+                    html += `<div class="rec-domain"><h4>${d.id}. ${d.name} <span class="gap-indicator ${gapClass}">Skor: ${score}/4 → Target: ${targetId}/4 (Gap: ${gap})</span></h4>`;
+                    html += `<p><strong>👥 People – Tindakan:</strong><br>${pRec.map(r=>'‣ '+r).join('<br>')}</p>`;
+                    html += `<p><strong>🔄 Process – Tindakan:</strong><br>${prRec.map(r=>'‣ '+r).join('<br>')}</p>`;
+                    html += `<p><strong>💻 Technology – Tindakan:</strong><br>${tRec.map(r=>'‣ '+r).join('<br>')}</p>`;
+                    if (resources.length) {
+                        html += `<p><strong>📚 Sumber Daya:</strong><br>`;
+                        resources.forEach(res => {
+                            html += `<a class="resource-link" href="${res.url}" target="_blank">🔗 ${res.name}</a>`;
+                        });
+                        html += `</p>`;
+                    }
+                    html += `</div>`;
                 }
             });
-
             document.getElementById('recSection').innerHTML = html;
         }
 
         function resetAssessment() {
-            document.querySelectorAll('input[type="radio"]').forEach(r => r.checked = false);
-            document.querySelectorAll('.radio-option').forEach(el => el.classList.remove('selected'));
+            document.querySelectorAll('input[type="radio"]').forEach(r=>r.checked=false);
+            document.querySelectorAll('.radio-option').forEach(el=>el.classList.remove('selected'));
             document.getElementById('resultsContainer').classList.remove('show');
-            document.getElementById('assessmentForm').scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('assessmentForm').scrollIntoView({behavior:'smooth'});
             updateProgress();
         }
 
-        // ============================================
-        // INIT
-        // ============================================
         buildForm();
-
-        // Listen for radio changes (for progress bar)
         document.addEventListener('change', function(e) {
-            if (e.target.type === 'radio' && e.target.name) {
-                // Update selected class
+            if (e.target.type==='radio' && e.target.name) {
                 const parent = e.target.closest('.radio-group');
                 if (parent) {
-                    parent.querySelectorAll('.radio-option').forEach(el => el.classList.remove('selected'));
+                    parent.querySelectorAll('.radio-option').forEach(el=>el.classList.remove('selected'));
                     const label = e.target.closest('.radio-option');
                     if (label) label.classList.add('selected');
                 }
